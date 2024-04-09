@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Test</title>
+</head>
+<body>
+    <form action="Form_with_table.html" method="GET">
+    <table border="1" style="background-color:whitesmoke;">
+        <caption><b>HTML Form Test</b></caption>
+    <tr>
+        <th>Name</th>
+        <td>
+            <input type="text" name="Name" placeholder="Enter your name">
+        </td>
+    </tr>
+    
+    <tr>
+        <th>Address</th>
+        <td>
+            <input type="text" name="Address">
+        </td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>
+            <input type="email" name="email">
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <th>Gender</th>
+        <td>
+            <input type="radio" name="Male" value="M">Male 
+            <input type="radio" name="Female" value="F">Female
+        </td>
+    </tr>
+    <tr>
+        <th>Hobbies</th>
+        <td>
+            <input type="checkbox" name="Sports" value="S">Sports
+            <input type="checkbox" name="Movies" value="M">Movies
+            <input type="checkbox" name="Travelling" value="T">Travelling
+        </td>
+    </tr>
+    
+    <tr>
+        <th>Country</th>
+        <td>
+            <select name="country" size=1 >
+                <option value="n">Nepal</option>
+                <option value="i">India</option>
+                <option value="k">Korea</option>
+                <option value="j">Japan</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+       <th>Message</th>
+       <td><textarea name="Message" id="" cols="25" rows="10"></textarea></td>
+    </tr>
+
+    <tr>
+        <td><input type="submit"></td>
+        <td><input type="reset"></td>
+    </tr>
+    </form>
+</body>
+</html>

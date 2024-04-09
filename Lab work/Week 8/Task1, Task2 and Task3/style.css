@@ -1,0 +1,28 @@
+/*Task1-PartB*/
+body {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; background-color: #CCFFFF;}
+
+h1 {font-size: 14px; font-variant: small-caps; color: #FF0000; background-color: #00FF00;
+/*Task3*/
+position: absolute;
+top: 0px;
+left: 0px;
+/*Task4*/
+z-index: 2;
+}
+
+/*Task2-PartB*/
+p:first-letter { font-size: 200%; }
+.income {background-color: #CCCCCC;}
+.expenses {background-color: #FF0000;}
+.profit {background-color: #FFFF00;}
+#budgetsummary {background-color: #FFFFFF; border: dotted;
+/*Task3*/
+padding: 20px;
+width: 500px;
+position: absolute;
+bottom: 0px;
+/*Task4*/
+top: 0px;
+z-index: 1;
+}
+

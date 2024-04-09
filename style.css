@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background-color: beige;
+  width: 1320px;
+  margin: 20px auto;
+}
+
+.header {
+  background-color: rgba(146, 45, 104, 0.598);
+  color: white;
+  overflow: hidden; /* Clear floats */
+}
+
+.logo {
+  float: left;
+  padding: 10px 20px;
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:active, 
+.navbar li a:hover {
+  background-color: pink;
+  color:rgba(146, 45, 104, 0.598);
+}
+
+a {
+  text-decoration: none;
+}
+
+.leftcolumn {
+  float: left;
+  width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 30%;
+  padding-left: 20px;
+}
+
+/* home-about*/
+.home-about {
+  background-color: #aaa;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+}
+.home-about {
+  background: url(./images/kitchen.jpg);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.img1 {
+  background: url(./images/image1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.img2 {
+  background: url(./images/image2.jpg);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.about-container {
+  position: relative;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.about-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+.about-content {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
