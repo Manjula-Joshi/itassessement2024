@@ -6,71 +6,139 @@
     <title>Week 9/Task 1</title>
     <style>
       .container {
-        border: 3px solid beige;
+        background-color: beige;
         position: relative;
         margin: 0 auto;
-        width: 500px;
-        height: 400px;
+        width: 550px;
+        height: 350px;
+        padding: 10px;
+        font-size: larger;
       }
-      .container .blue1 {
-        width: 100px;
-        height: 200;
-        background-color: skyblue;
+
+      .container .box {
         border: 2px solid black;
+        width: 540px;
+        height: 340px;
+        padding: 5px;
+      }
+
+      .container .box .column1 {
+        border: 1px solid black;
+        text-align: center;
         position: absolute;
-        left: 0%;
-        top: 0px;
+        background-color: white;
+        padding: 10px;
+        padding-right: 32px;
+        width: 188px;
+        left: 15px;
+        height: 25px;
+        top: 15px;
       }
-      .container .yellow1 {
-        width: 100px;
-        height: 150px;
+
+      .container .box .column2 {
+        border: 1px solid black;
+        text-align: center;
+        position: absolute;
+        background-color: white;
+        padding: 10px;
+        height: 25px;
+        width: 130px;
+        left: 250px;
+        top: 15px;
+      }
+
+      .container .box .column3 {
+        border: 1px solid black;
+        text-align: center;
+        background-color: white;
+        padding: 10px;
+        width: 130px;
+        height: 25px;
+        position: absolute;
+        right: 14px;
+        top: 15px;
+      }
+
+      .container .box .blue1 {
+        width: 200px;
+        height: 260px;
+        background-color: skyblue;
+        border: 1px solid black;
+        position: absolute;
+        left: 15px;
+        top: 65px;
+        padding: 15px;
+      }
+      .container .box .yellow1 {
+        width: 148px;
+        height: 55px;
         background-color: yellow;
-        border: 1px;
-        position: relative;
-        left: 100px;
-        top: 50px;
+        border: 1px solid black;
+        position: absolute;
+        left: 249px;
+        top: 65px;
         text-align: right;
+        padding-right: 4px;
       }
-      .container .red1 {
-        width: 100px;
-        height: 150px;
+      .container .box .red1 {
+        width: 150px;
+        height: 55px;
         background-color: red;
-        border: 1px;
-        float: right;
-        left: 200px;
-        top: -350px;
+        border: 1px solid black;
+        position: absolute;
+        left: 405px;
+        top: 65px;
         text-align: center;
       }
-      .container .green1 {
-        width: 200px;
-        height: 50px;
+      .container .box .green1 {
+        width: 275px;
+        height: 200px;
         background-color: green;
-        border: 1px;
+        border: 1px solid black;
         position: absolute;
-        left: 100px;
-        top: -350px;
+        left: 250px;
+        top: 125px;
+        padding: 15px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="blue1">
-        <p>A numbered list:</p>
-        <ol>
-          <li>Able</li>
-          <li>Baker</li>
-          <li>Charlie</li>
-          <li>Delta</li>
-          <li>Echo</li>
-        </ol>
+      <div class="box">
+        <div class="column1"><b>Column 1</b></div>
+        <div class="column2"><b>Column 2</b></div>
+        <div class="column3"><b>Column 3</b></div>
+
+        <div class="blue1">
+          <p>A numbered list:</p>
+          <ol>
+            <li>Able</li>
+            <li>Baker</li>
+            <li>Charlie</li>
+            <li>Delta</li>
+            <li>Echo</li>
+          </ol>
+        </div>
+
+        <div class="yellow1">
+          <p><b>B</b></p>
+        </div>
+
+        <div class="red1">
+          <p><b>C</b></p>
+        </div>
+
+        <div class="green1">
+          <p>An unnumbered list:</p>
+          <ul>
+            <li>Pounds</li>
+            <li>Dollars</li>
+            <li>Euro</li>
+            <li>Yen</li>
+            <li>Roubles</li>
+          </ul>
+        </div>
       </div>
-      <div class="yellow1">
-        <p>B</p>
-      </div>
-      <div class="red1">
-        <p>C</p>
-      </div>
-      <div class="green1"></div>
     </div>
   </body>
 </html>
